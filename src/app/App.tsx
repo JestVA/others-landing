@@ -2,6 +2,7 @@ import { PhoneMockup } from "./components/PhoneMockup";
 import appIcon from "../assets/4e2960a3b8905c28d2757a2db16ebd949cef29a3.png";
 import logMoodScreen from "../assets/fcdc0dcbd03a6c17f5a204d6861684613f173d2c.png";
 import homepageScreen from "../assets/83039d646ee315ff23cf2bab5fe49d6625956218.png";
+import appStoreQR from "../assets/others-qr-code.png";
 
 export default function App() {
   const screenshots = [
@@ -74,9 +75,16 @@ export default function App() {
 
         {/* App Store Badge Placeholder */}
         <div className="text-center mt-16">
-          <div className="inline-block px-8 py-4 bg-black text-white rounded-xl">
-            <p className="text-sm">Download on the</p>
-            <p className="text-2xl">App Store</p>
+          <div className="inline-flex flex-col items-center gap-4 px-8 py-6 bg-black text-white rounded-xl">
+            <div>
+              <p className="text-sm">Download on the</p>
+              <p className="text-2xl">App Store</p>
+            </div>
+            <img
+              src={appStoreQR}
+              alt="Download Others App QR Code"
+              className="w-32 h-32 rounded-lg bg-white p-2"
+            />
           </div>
         </div>
       </div>
